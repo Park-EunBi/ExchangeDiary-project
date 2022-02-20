@@ -1,0 +1,163 @@
+/* 초기화 */
+*{
+    margin: 0; padding: 0;
+    font-family: '맑은 고딕', 'Malgun Gothic', 'Gothic', sans-serif;
+    /* font-family: '상상토끼 문래러', 'Malgun Gothic', 'Gothic', sans-serif;
+    font-size: 150%; */
+}
+a {text-decoration: none;}
+
+li {list-style: none;}
+
+/* 페이지 구성 */
+body {
+    width: 960px; margin: 0 auto;
+    /* background: #cee2aa */
+    background-image: url(./icon/background.png);
+    background-size: 100%;
+    
+}
+
+/* 스티커 */
+#sticker {
+    width: 350px;
+    position: absolute;
+    left: 1300px;
+    top: -30px;
+}
+
+#page-wrapper {
+    /* background-color: #fffcf0; */
+    background-color: #f7f7f7;
+    margin: 40px 0; padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+/* 교환일기 중앙 정렬 */
+#main-header {
+    text-align: center;
+}
+
+/* 프로필 링크 중앙 정렬 */
+#section-1 {
+    text-align: center;
+}
+
+/* 프로필 링크 테두리 */
+#section-1 > a > img {
+    border-width:thick;
+    border-style:solid;
+    border-color: #0278AE;
+    padding: 20px;
+    border-radius: 58px;
+}
+
+/* 비밀방 오픈방 좌 우로 밀기 */
+#section-2 {
+    overflow: hidden;
+}
+
+.pull-left {
+    float: left;
+    width: 400px;
+    text-align: right;
+}
+
+
+.pull-right {
+    float: right;
+    width: 400px;
+    text-align: left;
+}
+
+/* 비밀방 오픈방 테두리 */
+#section2-side1 > a > img{
+    border-width:thick;
+    border-style: dashed;
+    border-color: #0278AE;
+    padding: 15px; 
+    border-radius: 20px;
+}
+
+#section2-side2 > a > img{
+    border-width:thick;
+    border-style: dashed;
+    border-color: #0278AE;
+    padding: 15px; 
+    border-radius: 20px;
+}
+
+/* hover 적용되지 않았을 때 보이는 이미지 */
+.button-icon1 {
+    background-image: url('./icon/open_icon.png');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+.button-icon2 {
+    background-image: url('./icon/secret_icon.png');
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+/* 올리면 변경될 이미지  */
+.button-icon1.hover {
+    background-image: url('./icon/open.png');
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.button-icon2.hover {
+    background-image: url('./icon/secret.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* 교환일기 설명글 위치 조정 */
+
+#section-3 {
+    width: 960px;
+    text-align: center;
+}
+
+#section-4 {
+    width: 960px;
+    text-align: center;
+
+}
+
+/* 갤러리 */
+/* div.item:nth-child(1)
+div.item:nth-child(2) 
+div.item:nth-child(3)  */
+
+/* 갤러리 버튼 */
+#left-button {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+#right-button {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+/* 푸터 중앙 정렬 */
+#main-footer
+{
+    text-align: center;
+}
