@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>selection_room</title>
+    <link rel="stylesheet" href="./select-room.css">
+
+    <!-- room-selection을 위한 jQiery 스크립트-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (var i = 0; i < 8; i++) {
+                $('<div></div>').addClass('box').css({
+                    width: 200,
+                    height: Math.floor(Math.random() * 100) + 100
+                }).appendTo('#room-selection');
+            }
+            $('#room-selection').masonry({
+                columnWidth: 115
+            });
+        });
+    </script>
+
+    <!-- 검색 팝업창 -->
+    <script langauge="javascript">
+        function popup(){
+            var url="./search_popup.html";
+            var option="width=400, height=200, top=400, left= 650"
+            window.open(url, "", option);
+        }
+    </script>
+
+    <!-- 방생성 팝업창 -->
+    <script langauge="javascript">
+        function popup2(){
+            var url="./makeroom_popup.html";
+            var option="width=400, height=250, top=400, left= 650"
+            window.open(url, "", option);
+        }
+    </script>
+
+
+</head>
+<body>
+
+    <!--전체를 감싸는 태그-->
+    <div id="page-wrapper">
+
+        <!--상단 내비게이션-->
+        <div id="top-navigation">
+            <div class="pull-left">
+                <a href="../../main-page/main-page.html">
+                    <img src="../images/home.png" width="70">
+                </a>
+            </div>
+            <div class="pull-right">
+                <a href="../../profile/profile.html">
+                    <img src="../images/사람.png" width="40">
+                </a>
+            </div>
+            
+        </div>
+        <hr>
+
+        <!--하단 내비게이션-->
+        <div id="bottom-navigation">
+            <div class="pull-left2">
+                <a href="javascript:popup2()">
+                    <img src="../images/방생성.png" width="140" >
+                </a>
+            </div>
+            <div class="pull-right2">
+                <a href="javascript:popup()">
+                    <img src="../images/검색.png" width="100">
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        
+        <!--본문-->
+
+        <!-- 생성된 방 -->
+        <div id = "room">
+            <div class = "room-name">
+                <img src="../images/방1.jpg" style="padding: 15px 6px;">
+                <img src="../images/방2.jpg"style="padding: 15px;">
+                <img src="../images/방3.jpg" style="padding: 15px;">
+                <a href="../../secret_room.html">
+                    <img src="../images/방4.jpg"style="padding: 15px 6px;">
+                </a>
+            </div>
+        </div>
+
+        <div id="room-selection">
+        </div>
+
+
+
+        <!--푸터-->
+        <footer id="main-footer">
+            <br>
+            <!-- <hr> -->
+            <p>덕성여자대학교 소프트웨어 동아리 PIONEER_코딩 문제없조</p>
+            <p>이수진, 이소영, 박은비</p>
+        </footer>
+    </div>
+</body>

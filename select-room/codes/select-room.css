@@ -1,0 +1,101 @@
+/* 초기화 */
+*{
+    margin: 0; padding: 0;
+    font-family: '맑은 고딕', 'Malgun Gothic', 'Gothic', sans-serif;
+}
+a {text-decoration: none;}
+
+li {list-style: none;}
+
+/* 페이지 구성 */
+body {
+    width: 960px; margin: 0 auto;
+    background: #cee2aa;
+    background-image: url(../images/background.png);
+}
+
+#page-wrapper {
+    background-color: #f7f7f7;
+    margin: 40px 0; padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+#room-select {
+    text-align: center;
+}
+
+/* 네비게이션 바 좌 우 구역 나누기 */
+#top-navigation {
+    overflow: hidden;
+}
+
+.pull-left {
+    float: left;
+    width: 400px;
+    text-align: left;
+}
+.pull-right {
+    float: right;
+    width: 400px;
+    text-align: right;
+}
+
+.pull-left2 {
+    float: left;
+    width: 460px;
+    text-align: right;
+
+}
+.pull-right2 {
+    float: right;
+    width: 460px;
+    text-align: left;
+}
+
+/* 생성방 위치 설정 */
+#room {
+    display: inline-block;
+}
+
+.room-name{
+    text-align: center;
+}
+
+/* masony */
+
+.box {
+    background-color: #696969;
+    /* background-color: gray; */
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+/* 푸터 중앙 정렬 */
+#main-footer
+{
+    text-align: center;
+}
+
+/* 클릭시 애니메이션*/
+.pull-right2 :active {
+    transform: translateY(3px);
+}
+
+.pull-left2 :active {
+    transform: translateY(3px);
+}
+
+.pull-right :active {
+    transform: translateY(3px);
+}
+
+.pull-left :active {
+    transform: translateY(3px);
+}
