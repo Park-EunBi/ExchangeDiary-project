@@ -5,7 +5,7 @@
 
 ### feature/open_room-soojin
 #### 교환일기 오픈룸 구현
-
+---
 ##### open room
 교환일기 웹 페이지 속에서 익명으로 자유롭게 사용하는 게시판
 관리자가 하루에 한개의 질문을 자동으로 올리고 그에 대한 답을 익명으로 올리면서 자신의 일상을 공유하는 공간
@@ -21,7 +21,7 @@ open room은 하루에 한번 자정에 새롭게 리셋되고 새로운 질문�
 사용자가 사진, 동영상 글을 올리는 부분에는 input 태그에 type 속성을 지정해서 입력 양식을 생성하였다.
 
 
-<iframe width="640" height="360" src="https://user-images.githubusercontent.com/87466284/155872608-130eaaec-8705-4da9-9209-fd2f25bd0845.mp4" frameborder="0" gesture="media" allowfullscreen=""></iframe>
-
-
+<video width="100%" height="100%" controls="controls">
+  <source src="https://user-images.githubusercontent.com/87466284/155872608-130eaaec-8705-4da9-9209-fd2f25bd0845.mp4" type="video/mp4">
+</video>
 
