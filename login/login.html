@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Login_SignUp</title>
+    <link rel="stylesheet" href="./login.css"
+</head>
+<body>
+    <img src="./sticker.png" id="sticker">
+    <!-- 전체를 감싸는 태그 -->
+    <div id = "page-wrapper">
+
+        <!-- 네비게이션 -->
+        <nav id = "main-navigation">
+            <h3>
+                <a href="홈으로 이동">
+                    <img src="./icon/home.png" height="50">
+                </a>
+                
+            </h3>
+        </nav>
+        <hr>
+
+        <!-- 본문 -->
+        <div id = "content">
+
+            <!-- 본문 좌측-로그인 -->
+            <section id = "login">
+                <a>
+                    <img src="./icon/loginn.png" height="150">
+                </a>
+                <br>
+                <table id="login-table">
+                    <tr>
+                        <td><label for="name">ID</label></td>
+                        <td><input id="name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pw">PW</label></td>
+                        <td><input id="pw" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="submit">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- 본문 우측-회원가입 -->
+            <section id = "sign-up">
+                <a>
+                    <img src="./icon/joinnn.png" height="150">
+                </a>
+                <br>
+                <table id="join-table">
+                    <tr>
+                        <td><label for="name">ID</label></td>
+                        <td><input id="name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pw">PW</label></td>
+                        <td><input id="pw" type="text"></td>
+                    </tr>
+                    <tr>    
+                        <td><label for="nick-name">Name</label></td>
+                        <td><input id="nick-name" type="text"></td>
+                    </tr>
+                    <tr id="photo">    
+                        <td><label for="photo">Photo</label></td>
+                        <td><input id="photo" type="file"></td>
+                    </tr>
+                    <tr>
+                        <td class="submit">
+                            <input type="submit">
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <hr>
+
+        <!-- 푸터 -->
+        <footer id = "main-footer">
+            <p>덕성여자대학교 소프트웨어 동아리 PIONEER_코딩 문제없조</p>
+            <p>이수진, 이소영, 박은비</p>
+        </footer>
+
+    </div>
+</body>

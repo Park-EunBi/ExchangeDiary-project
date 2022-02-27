@@ -1,0 +1,118 @@
+/*전체 구성*/
+*{
+    font-family: 'Malgun Gothic', 'Gothic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {list-style: none;}
+
+/* 전체 페이지 */
+body{
+    width: 960px; margin: 0 auto;
+    background-image: url(background.png);
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+#page-wrapper {
+    background-color: #f7f7f7;
+    margin: 40px 0; padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+
+#content {
+    text-align: center;
+    width: 960px; padding: 10px 20px;
+}
+
+#sticker {
+    width: 350px;
+    position: absolute;
+    left: 1300px;
+    top: -30px;
+}
+
+/*로그인 영역*/
+#login {
+    position: relative;
+    left: -40px;
+    width: 480px; height: 600px; margin: 0 auto;
+    float: left;
+    text-align: center;
+
+}
+/* ID 박스 */
+#name {
+    width: 280px; height: 40px; margin: 10px 10px;
+    background-color: #f7f7f7;
+    border-color: #0278AE;
+    border-style: dashed solid;
+    border-radius: 20px 20px 20px 20px;
+    color: #0278AE;
+}
+/*로그인 표*/
+#login-table {
+    margin: 0 auto;
+}
+
+/* PW 박스 */
+#pw {
+    width: 280px; height: 40px; margin: 10px 10px;
+    background-color: #f7f7f7;
+    border-color: #0278AE;
+    border-style: dashed solid;
+    border-radius: 20px 20px 20px 20px;
+    color: #0278AE;
+}
+
+/*회원가입 영역*/
+#sign-up{
+    position: relative;
+    left: -40px;
+    width: 480px; height: 600px; margin: 0 auto;
+    float: right;
+    text-align: center;
+}
+
+/*회원가입 표*/
+#join-table {
+    margin: 0 auto;
+}
+
+/*이름 박스*/
+#nick-name {
+    width: 280px; height: 40px; margin: 10px 10px;
+    background-color: #f7f7f7;
+    border-color: #0278AE;
+    border-style: dashed solid;
+    border-radius: 20px 20px 20px 20px;
+    color: #0278AE;
+    
+}
+
+/*사진 입력 박스*/
+#photo {
+    margin: 10px 10px;
+}
+
+/*푸터 영역*/
+#main-footer {
+    position: relative;
+    left: -20px;
+    width: 960px; padding: 10px 0px;
+    float: inherit;
+    text-align: center;
+}
+
+/*제출 영역*/
+
+.submit {
+    position: relative;
+    left: 50%;
+    border-radius: 10px 10px 10px 10px;
+}
