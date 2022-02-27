@@ -21,7 +21,3 @@ open room은 하루에 한번 자정에 새롭게 리셋되고 새로운 질문�
 사용자가 사진, 동영상 글을 올리는 부분에는 input 태그에 type 속성을 지정해서 입력 양식을 생성하였다.
 
 
-<video width="100%" height="100%" controls="controls">
-  <source src="https://user-images.githubusercontent.com/87466284/155872608-130eaaec-8705-4da9-9209-fd2f25bd0845.mp4" type="video/mp4">
-</video>
-
