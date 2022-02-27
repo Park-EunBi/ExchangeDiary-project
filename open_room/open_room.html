@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>open_room</title>
+    <script>
+        window.onload = function () {
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                './icon/1.png', './icon/2.png', './icon/3.png', './icon/4.png', './icon/5.png', './icon/6.png',
+
+            ];
+
+            setInterval( function() {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 10000/40);
+        };
+    </script>
+    <link rel="stylesheet" href="open_room_css.css">
+ 
+</head>
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id = "page-wrapper">
+
+        <!-- 네비게이션 -->
+        <nav id = "main-navigation">
+            <div class="icon-home">
+                <a href="../profile/profile.html">
+                    <img src="./icon/사람.png" alt="아이콘">
+                </a>
+            </div>  
+            <div class="icon-profile">
+                <a href="../main-page/main-page.html">
+                    <img src="./icon/홈.png" alt="아이콘">
+                </a>
+            </div>
+                <div class="title"><h4>open room</h4></div>
+        </nav>
+       
+        <!-- 운영자 질문란 -->
+        <header>
+            <div class="main-title"><img src="./icon/오늘의 질문.png" alt="질문"></div>
+            <div id="section">
+            <div class="balloon_01"><p>오늘 당신의 먹은 맛있는 음식을 '사진'을 통해 <br> 다른사람들과 공유해보세요!</p></div>
+            <img id="image" class="image2">
+           
+            </div>
+            
+        </header>
+        <hr>
+
+        <!-- 본문 -->
+        <div id = "content">
+            <!-- 다른 사용자 답변 -->
+            <div id = "other-person_1">
+                <div class="otherperson1"><img src="./icon/다른사람.png" alt="다른사람"></div>
+                <div class="balloon_02"><img src="./icon/음식.jpg" alt="음식"></div>
+            </div>
+
+            <div id="other-person_2">
+                <div class="otherperson2"><img src="./icon/다른사람1.png" alt="다른사람1"></div>
+                <div class="balloon_03"><img src="./icon/음식2.jpg" alt="음식2"></div>
+            </div>
+            
+        </div>
+            <!-- 답변 업로드하기 -->
+                <div class="send">
+                <br>
+                <div class="send-text">
+                    <form>
+                        <input type="text" id="text1" class="input-search" >
+                        <input type="submit" class="input-search-submit" value="SEND"> 
+                        <input type="file" class="button-photo" value="UPLOAD">
+                    </form>
+                </div>
+            </div>
+        
+        <hr>
+
+        <!-- 푸터 -->
+        <footer id = "main-footer">
+            <p>덕성여자대학교 소프트웨어 동아리 PIONEER_코딩 문제없조</p>
+            <p>이수진, 이소영, 박은비</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
