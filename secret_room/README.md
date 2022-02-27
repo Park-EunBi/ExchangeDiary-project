@@ -20,4 +20,6 @@ secret room은 하루에 한번 자정에 새롭게 리셋되고 새로운 질�
 사용자가 사진, 동영상 글을 올리는 부분에는 input 태그에 type 속성을 지정해서 입력 양식을 생성하였다.
 
 ###### 2. 실행화면
-<img width="80%" src="https://user-images.githubusercontent.com/87466284/155873096-7302b0c1-99e5-4e77-8294-c492fab1e563.gif"/>
+<img width="80%" src="https://user-images.githubusercontent.com/87466284/155873481-b242c810-21cf-4190-be3d-bffa5c85d589.gif"/>
+
+
